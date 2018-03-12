@@ -2,7 +2,7 @@
     <div class="calculator">
         <div class="price-form-container">
             <p class="sub text-center undefined">Usiwe na shaka kupata huduma kwani vituo vya afya vipo karibu yako.</p>
-            <h1 class="pre-form-heading text-center undefined">Tafuta kituo cha afya cha karibu</h1>
+            <h1 class="pre-form-heading text-center undefined">Tafuta kituo cha NHIF cha afya cha karibu</h1>
             <p class="pre-form-paragraph text-center undefined">Anza kwa kuandika jina la sehemu yako</p>
 
             <form class="health-form form-horizontal">

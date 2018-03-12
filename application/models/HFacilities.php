@@ -10,10 +10,16 @@ class HFacilities extends CI_Model {
     if( !$kwargs ){
       return NULL;
     }
-    if( $all_levels )
-      $result = $this->db->or_like($kwargs)->get('pro_health_facilities');
-    else
-      $result = $this->db->like($kwargs)->get('pro_health_facilities');
+    if( $all_levels ){
+      $this->db->where("nhif_accreditation_no !=","NULL");
+      $this->db->or_like($kwargs);
+      $result = $this->db->get('pro_health_facilities');
+    }
+    else{
+      $this->db->where("nhif_accreditation_no !=","NULL");
+      $this->db->like($kwargs);
+      $result = $this->db->get('pro_health_facilities');
+    }
 
     #print_r($this->db->last_query());
     if( $result->num_rows()){

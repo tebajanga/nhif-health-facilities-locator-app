@@ -44,7 +44,7 @@ class Api extends CI_Controller {
         'region' => $region == NULL ? $q : $region,
         'district' => $district == NULL ? $q : $district,
         'ward' => $ward == NULL ? $q : $ward,
-        'village' => $village == NULL ? $q : $village
+        'village' => $village == NULL ? $q : $village,
       );
 
       $all_levels = count(array_count_values($query)) == 1 ? 1 : 0;
